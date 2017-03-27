@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+    <form method="POST" action="https://formspree.io/sai_puzikov@hotmail.com">
+        <label> Full name:
+            <input type="text" name="Full name" required>
+         </label>
+         <br>
+         <label>Sex:
+             <select name="sex" required>
+                 <option value="Male">Male</option>
+                 <option value="Female">Female</option>
+             </select>
+         </label>
+         <br>
+         <label>Date of birth:
+             <input type="date" name="bday" max="1999-12-31"><br>
+         </label>
+         <br>
+         <label>Email:
+             <input type="email" name="Email" required>
+         </label>
+         <br>
+         <label>Phone number:
+              <input type="tel" name="usrtel" required>
+         </label>
+         <br>
+         <label>Occupation:
+             <input list="occupation" required>
+             <datalist id="occupation">
+                <option value="Doctor">
+                <option value="Developer">
+                <option value="Tester">
+                <option value="Teacher">
+                <option value="Salesman">
+                <option value="Policeman">
+             </datalist>
+         </label>
+         <br>
+         <label required>What is your attitude towards Donald Trump?<br>
+             <input type="radio" name="attitude" value="Negative" checked> Negative<br>
+             <input type="radio" name="attitude" value="Positive"> Positive<br>
+         </label>
+          <br>
+         <label required>What Trump's recent actions do you consider to have the most negative impact on the US?<br>
+            <textarea name="Negative action" rows="10" cols="30"> </textarea>
+         </label>
+          <br>
+         <label required>What Trump's recent actions do you consider to have the most positive impact on the US?<br>
+            <textarea name="Positive action" rows="10" cols="30"> </textarea>
+         </label>
+         <br>
+         <input type="submit" value="Send!">
+    </form>
+</body>
+</html>
